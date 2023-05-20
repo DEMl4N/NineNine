@@ -14,6 +14,7 @@
 		CC5D8DEA2A1928AB0089A850 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = CC5D8DE92A1928AB0089A850 /* Assets.xcassets */; };
 		CC5D8DED2A1928AB0089A850 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CC5D8DEB2A1928AB0089A850 /* LaunchScreen.storyboard */; };
 		CC5D8DF92A1929C40089A850 /* HexColor.swift in Sources */ = {isa = PBXBuildFile; fileRef = CC5D8DF82A1929C40089A850 /* HexColor.swift */; };
+		CC5D8DFB2A192A8D0089A850 /* NanumGothic.otf in Resources */ = {isa = PBXBuildFile; fileRef = CC5D8DFA2A192A8D0089A850 /* NanumGothic.otf */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -26,6 +27,7 @@
 		CC5D8DEC2A1928AB0089A850 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		CC5D8DEE2A1928AB0089A850 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		CC5D8DF82A1929C40089A850 /* HexColor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HexColor.swift; sourceTree = "<group>"; };
+		CC5D8DFA2A192A8D0089A850 /* NanumGothic.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = NanumGothic.otf; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -61,6 +63,7 @@
 				CC5D8DF42A1929380089A850 /* Model */,
 				CC5D8DF52A1929470089A850 /* View */,
 				CC5D8DF62A1929540089A850 /* Controller */,
+				CC5D8DFC2A192A930089A850 /* Fonts */,
 				CC5D8DF72A1929670089A850 /* utils */,
 				CC5D8DE22A1928AA0089A850 /* SceneDelegate.swift */,
 				CC5D8DE02A1928AA0089A850 /* AppDelegate.swift */,
@@ -100,6 +103,14 @@
 				CC5D8DF82A1929C40089A850 /* HexColor.swift */,
 			);
 			path = utils;
+			sourceTree = "<group>";
+		};
+		CC5D8DFC2A192A930089A850 /* Fonts */ = {
+			isa = PBXGroup;
+			children = (
+				CC5D8DFA2A192A8D0089A850 /* NanumGothic.otf */,
+			);
+			path = Fonts;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -163,6 +174,7 @@
 				CC5D8DED2A1928AB0089A850 /* LaunchScreen.storyboard in Resources */,
 				CC5D8DEA2A1928AB0089A850 /* Assets.xcassets in Resources */,
 				CC5D8DE82A1928AA0089A850 /* Main.storyboard in Resources */,
+				CC5D8DFB2A192A8D0089A850 /* NanumGothic.otf in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
