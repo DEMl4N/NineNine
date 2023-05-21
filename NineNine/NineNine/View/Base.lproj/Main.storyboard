@@ -86,7 +86,7 @@
                                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="9l5-XR-esI" userLabel="Contents Stack View">
                                                 <rect key="frame" x="55" y="100" width="304" height="533"/>
                                                 <subviews>
-                                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="yZW-lk-c1E" userLabel="GameListView">
+                                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="yZW-lk-c1E" userLabel="ContentTileView">
                                                         <rect key="frame" x="0.0" y="0.0" width="304" height="50"/>
                                                         <subviews>
                                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="게임 리스트" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="vfZ-q7-PNH">
@@ -163,8 +163,8 @@
                         </constraints>
                     </view>
                     <connections>
+                        <outlet property="ContentTitleView" destination="yZW-lk-c1E" id="Exd-tN-V5N"/>
                         <outlet property="GameContentsView" destination="xCG-WJ-gLy" id="1IX-8H-mVM"/>
-                        <outlet property="GameListView" destination="yZW-lk-c1E" id="mu7-QF-VUm"/>
                         <outlet property="titleLabel" destination="o48-zR-7jj" id="Nqc-m6-xiL"/>
                     </connections>
                 </viewController>

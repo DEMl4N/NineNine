@@ -15,6 +15,7 @@
 		CC5D8DEA2A1928AB0089A850 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = CC5D8DE92A1928AB0089A850 /* Assets.xcassets */; };
 		CC5D8DED2A1928AB0089A850 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CC5D8DEB2A1928AB0089A850 /* LaunchScreen.storyboard */; };
 		CC5D8DF92A1929C40089A850 /* HexColor.swift in Sources */ = {isa = PBXBuildFile; fileRef = CC5D8DF82A1929C40089A850 /* HexColor.swift */; };
+		CCF41ACE2A19FDA100355AEC /* LabelAttiributeUtils.swift in Sources */ = {isa = PBXBuildFile; fileRef = CCF41ACD2A19FDA100355AEC /* LabelAttiributeUtils.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -28,6 +29,7 @@
 		CC5D8DEC2A1928AB0089A850 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		CC5D8DEE2A1928AB0089A850 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		CC5D8DF82A1929C40089A850 /* HexColor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HexColor.swift; sourceTree = "<group>"; };
+		CCF41ACD2A19FDA100355AEC /* LabelAttiributeUtils.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LabelAttiributeUtils.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -101,6 +103,7 @@
 			isa = PBXGroup;
 			children = (
 				CC5D8DF82A1929C40089A850 /* HexColor.swift */,
+				CCF41ACD2A19FDA100355AEC /* LabelAttiributeUtils.swift */,
 			);
 			path = utils;
 			sourceTree = "<group>";
@@ -185,6 +188,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				CCF41ACE2A19FDA100355AEC /* LabelAttiributeUtils.swift in Sources */,
 				CC5D8DE52A1928AA0089A850 /* ViewController.swift in Sources */,
 				CC5D8DF92A1929C40089A850 /* HexColor.swift in Sources */,
 				CC5D8DE12A1928AA0089A850 /* AppDelegate.swift in Sources */,
