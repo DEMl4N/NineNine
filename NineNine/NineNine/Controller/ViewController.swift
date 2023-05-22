@@ -19,8 +19,7 @@ class ViewController: UIViewController, UITableViewDelegate, UITableViewDataSour
     override func viewDidLoad() {
         super.viewDidLoad()
         
-        // LabelAttributeUtils.swift
-        addLabelStroke(targetLabel: titleLabel, strokeHexColor: "#ECB21C", strokeWidth: 5.0)
+        addLabelStroke(targetLabel: titleLabel, strokeHexColor: "#ECB21C", strokeWidth: 5.0) // LabelAttributeUtils.swift
         
         setContentsViewRoundShape(cornerRadius: 20)
         
