@@ -53,8 +53,24 @@ class ViewController: UIViewController, UITableViewDelegate, UITableViewDataSour
         
         return cell
     }
+    
     /* ------------------------------------------------------ */
     
-    
+    // 각각의 테이블 뷰 셀에 따라 다른 화면으로 이동하는 부분
+    func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+        switch indexPath.row {
+        case 0: // 탭탭 테이블 뷰 셀
+            performSegue(withIdentifier: "ShowBBStartingView", sender: nil)
+            break
+        case 1: // 쉐킷쉐킷 테이블 뷰 셀
+            performSegue(withIdentifier: "ShowBBStartingView", sender: nil)
+            break
+        case 2: // 부비부비 테이블 뷰 셀
+            performSegue(withIdentifier: "ShowBBStartingView", sender: nil)
+            break
+        default:
+            return
+        }
+    }
 }
 
