@@ -8,8 +8,7 @@
 import UIKit
 
 class ViewController: UIViewController, UITableViewDelegate, UITableViewDataSource {
-    
-    @IBOutlet weak var titleLabel: UILabel!
+
     @IBOutlet weak var contentTitleView: UIView!
     @IBOutlet weak var gameContentsView: UIView!
     @IBOutlet weak var gameContentsTableView: UITableView!
@@ -18,9 +17,7 @@ class ViewController: UIViewController, UITableViewDelegate, UITableViewDataSour
 
     override func viewDidLoad() {
         super.viewDidLoad()
-        
-        addLabelStroke(targetLabel: titleLabel, strokeHexColor: "#ECB21C", strokeWidth: 5.0) // LabelAttributeUtils.swift
-        
+
         setContentsViewRoundShape(cornerRadius: 20)
         
         gameContentsTableView.delegate = self
