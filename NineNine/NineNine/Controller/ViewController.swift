@@ -8,8 +8,7 @@
 import UIKit
 
 class ViewController: UIViewController, UITableViewDelegate, UITableViewDataSource {
-    
-    @IBOutlet weak var titleLabel: UILabel!
+
     @IBOutlet weak var contentTitleView: UIView!
     @IBOutlet weak var gameContentsView: UIView!
     @IBOutlet weak var gameContentsTableView: UITableView!
@@ -18,9 +17,7 @@ class ViewController: UIViewController, UITableViewDelegate, UITableViewDataSour
 
     override func viewDidLoad() {
         super.viewDidLoad()
-        
-        addLabelStroke(targetLabel: titleLabel, strokeHexColor: "#ECB21C", strokeWidth: 5.0) // LabelAttributeUtils.swift
-        
+
         setContentsViewRoundShape(cornerRadius: 20)
         
         gameContentsTableView.delegate = self
@@ -53,6 +50,32 @@ class ViewController: UIViewController, UITableViewDelegate, UITableViewDataSour
         
         return cell
     }
+    
     /* ------------------------------------------------------ */
+    
+    // 각각의 테이블 뷰 셀에 따라 다른 화면으로 이동하는 부분
+    func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+        switch indexPath.row {
+        case 0: // 탭탭 테이블 뷰 셀
+            moveGameStartingView(storyBoardID: "TabTabVC")
+            break
+        case 1: // 쉐킷쉐킷 테이블 뷰 셀
+            moveGameStartingView(storyBoardID: "TabTabVC")
+            break
+        case 2: // 부비부비 테이블 뷰 셀
+            moveGameStartingView(storyBoardID: "BBStartingVC")
+            break
+        default:
+            return
+        }
+    }
+    
+    func moveGameStartingView(storyBoardID: String) {
+        guard let uvc = self.storyboard?.instantiateViewController(identifier: "\(storyBoardID)") else {
+             return
+         }
+        
+        self.navigationController?.pushViewController(uvc, animated: true)
+    }
 }
 
