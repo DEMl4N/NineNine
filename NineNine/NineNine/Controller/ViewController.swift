@@ -60,17 +60,25 @@ class ViewController: UIViewController, UITableViewDelegate, UITableViewDataSour
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
         switch indexPath.row {
         case 0: // 탭탭 테이블 뷰 셀
-            performSegue(withIdentifier: "ShowBBStartingView", sender: nil)
+            moveGameStartingView(storyBoardID: "TabTabVC")
             break
         case 1: // 쉐킷쉐킷 테이블 뷰 셀
-            performSegue(withIdentifier: "ShowBBStartingView", sender: nil)
+            moveGameStartingView(storyBoardID: "TabTabVC")
             break
         case 2: // 부비부비 테이블 뷰 셀
-            performSegue(withIdentifier: "ShowBBStartingView", sender: nil)
+            moveGameStartingView(storyBoardID: "BBStartingVC")
             break
         default:
             return
         }
+    }
+    
+    func moveGameStartingView(storyBoardID: String) {
+        guard let uvc = self.storyboard?.instantiateViewController(identifier: "\(storyBoardID)") else {
+             return
+         }
+        
+        self.navigationController?.pushViewController(uvc, animated: true)
     }
 }
 

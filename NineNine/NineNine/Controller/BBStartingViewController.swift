@@ -11,8 +11,9 @@ class BBStartingViewController: UIViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
-
-        // Do any additional setup after loading the view.
     }
 
+    @IBAction func moveBack(_ sender: UIButton) {
+        self.navigationController?.popViewController(animated: true)
+    }
 }
