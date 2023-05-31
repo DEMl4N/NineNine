@@ -9,8 +9,18 @@ import UIKit
 
 class BBStartingViewController: UIViewController {
 
+    @IBOutlet weak var gameStartBtn: UIImageView!
+
     override func viewDidLoad() {
         super.viewDidLoad()
+    }
+    
+    override func viewWillAppear(_ animated: Bool) {
+        gameStartBtn.image = #imageLiteral(resourceName: "GameStartBtn2")
+    }
+
+    @IBAction func gameStartBtnPressed(_ sender: UIButton) {
+        gameStartBtn.image = #imageLiteral(resourceName: "GameStartBtn")
     }
 
     @IBAction func moveBack(_ sender: UIButton) {
