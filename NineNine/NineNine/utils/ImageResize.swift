@@ -14,7 +14,8 @@ func resizeImage(image: UIImage, targetSize: CGSize) -> UIImage {
     UIGraphicsBeginImageContext(CGSize(width: targetSize.width, height: targetSize.height))
     customImage.draw(in: newImageRect)
 
-    let newImage = UIGraphicsGetImageFromCurrentImageContext()?.withRenderingMode(.alwaysOriginal)
+//    let newImage = UIGraphicsGetImageFromCurrentImageContext()?.withRenderingMode(.alwaysOriginal)
+    let newImage = UIGraphicsGetImageFromCurrentImageContext()
     UIGraphicsEndImageContext()
     return newImage!
 }
