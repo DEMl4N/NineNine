@@ -6,3 +6,9 @@
 //
 
 import Foundation
+
+protocol BBLaserBoardDelegate: AnyObject {
+    func didLaserDraw(laserPointCount: Int)
+}
+
+/* AnyObject 형으로 해주는 이유 => https://jusung.github.io/classOnlyProtocol/ */
