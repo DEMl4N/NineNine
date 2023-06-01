@@ -26,4 +26,11 @@ class BBStartingViewController: UIViewController {
     @IBAction func moveBack(_ sender: UIButton) {
         self.navigationController?.popViewController(animated: true)
     }
+
+    @IBAction func moveBBGameVIew(_ sender: UIButton) {
+        guard let uvc = self.storyboard?.instantiateViewController(identifier: "BBGameVC") else {
+                 return
+             }
+        self.navigationController?.pushViewController(uvc, animated: true)
+    }
 }

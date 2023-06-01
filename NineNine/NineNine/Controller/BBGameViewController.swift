@@ -7,23 +7,25 @@
 
 import UIKit
 
-class BBGameViewController: UIViewController {
+class BBGameViewController: UIViewController, BBLaserBoardDelegate {
+
+    @IBOutlet weak var catImage: UIImageView!
+    @IBOutlet weak var score: UILabel!
+    @IBOutlet weak var laserBoardView: BBLaserBoardView!
+    var scoreNum: Int = 0
+    let catImageArray: [UIImage] = [#imageLiteral(resourceName: "left"), #imageLiteral(resourceName: "right")]
+    var flag: Int = 0
 
     override func viewDidLoad() {
         super.viewDidLoad()
-
-        // Do any additional setup after loading the view.
+        
+        laserBoardView.delegate = self
+        score.text = "0"
     }
     
-
-    /*
-    // MARK: - Navigation
-
-    // In a storyboard-based application, you will often want to do a little preparation before navigation
-    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        // Get the new view controller using segue.destination.
-        // Pass the selected object to the new view controller.
+    func didLaserDraw(laserPointCount: Int) {
+        score.text = "\(laserPointCount / 6)"
+        flag = flag == 0 ? 1 : 0
+        catImage.image = catImageArray[flag]
     }
-    */
-
 }
