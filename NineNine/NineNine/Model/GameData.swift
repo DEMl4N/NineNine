@@ -19,3 +19,10 @@ struct GameData {
         return gameImages
     }
 }
+
+struct LaserLine {
+    var points: [CGPoint]
+    let strokeColor: UIColor
+    let strokeWidth: CGFloat
+    var laserPointCount: Int
+}
