@@ -18,6 +18,9 @@
 		CC5D8DEA2A1928AB0089A850 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = CC5D8DE92A1928AB0089A850 /* Assets.xcassets */; };
 		CC5D8DED2A1928AB0089A850 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CC5D8DEB2A1928AB0089A850 /* LaunchScreen.storyboard */; };
 		CC5D8DF92A1929C40089A850 /* HexColor.swift in Sources */ = {isa = PBXBuildFile; fileRef = CC5D8DF82A1929C40089A850 /* HexColor.swift */; };
+		CC7FC8622A2847F700D4F33A /* BBGameViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CC7FC8612A2847F700D4F33A /* BBGameViewController.swift */; };
+		CC7FC8662A28748F00D4F33A /* BBLaserBoardView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CC7FC8652A28748F00D4F33A /* BBLaserBoardView.swift */; };
+		CC7FC8692A288EC700D4F33A /* BBLaserBoardDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = CC7FC8682A288EC700D4F33A /* BBLaserBoardDelegate.swift */; };
 		CC8787212A24860700C79AD3 /* BBStartingViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CC8787202A24860700C79AD3 /* BBStartingViewController.swift */; };
 		CCF41ACE2A19FDA100355AEC /* LabelAttiributeUtils.swift in Sources */ = {isa = PBXBuildFile; fileRef = CCF41ACD2A19FDA100355AEC /* LabelAttiributeUtils.swift */; };
 /* End PBXBuildFile section */
@@ -36,6 +39,9 @@
 		CC5D8DEC2A1928AB0089A850 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		CC5D8DEE2A1928AB0089A850 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		CC5D8DF82A1929C40089A850 /* HexColor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HexColor.swift; sourceTree = "<group>"; };
+		CC7FC8612A2847F700D4F33A /* BBGameViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BBGameViewController.swift; sourceTree = "<group>"; };
+		CC7FC8652A28748F00D4F33A /* BBLaserBoardView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BBLaserBoardView.swift; sourceTree = "<group>"; };
+		CC7FC8682A288EC700D4F33A /* BBLaserBoardDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BBLaserBoardDelegate.swift; sourceTree = "<group>"; };
 		CC8787202A24860700C79AD3 /* BBStartingViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BBStartingViewController.swift; sourceTree = "<group>"; };
 		CCF41ACD2A19FDA100355AEC /* LabelAttiributeUtils.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LabelAttiributeUtils.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -83,6 +89,7 @@
 				CC5D8DF62A1929540089A850 /* Controller */,
 				CC5D8DF72A1929670089A850 /* utils */,
 				CC5D8DFC2A192A930089A850 /* Fonts */,
+				CC7FC8672A288E4700D4F33A /* protocols */,
 				CC5D8DE22A1928AA0089A850 /* SceneDelegate.swift */,
 				CC5D8DE02A1928AA0089A850 /* AppDelegate.swift */,
 				CC5D8DE92A1928AB0089A850 /* Assets.xcassets */,
@@ -97,6 +104,7 @@
 			children = (
 				CC5D8DE62A1928AA0089A850 /* Main.storyboard */,
 				CC0C83492A1A40CF00DB6534 /* GameContentsTableViewCell.swift */,
+				CC7FC8652A28748F00D4F33A /* BBLaserBoardView.swift */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -106,6 +114,7 @@
 			children = (
 				CC5D8DE42A1928AA0089A850 /* ViewController.swift */,
 				CC8787202A24860700C79AD3 /* BBStartingViewController.swift */,
+				CC7FC8612A2847F700D4F33A /* BBGameViewController.swift */,
 			);
 			path = Controller;
 			sourceTree = "<group>";
@@ -126,6 +135,14 @@
 				CC4E09E52A1931DC00B7ED08 /* NanumGothicExtraBold.otf */,
 			);
 			path = Fonts;
+			sourceTree = "<group>";
+		};
+		CC7FC8672A288E4700D4F33A /* protocols */ = {
+			isa = PBXGroup;
+			children = (
+				CC7FC8682A288EC700D4F33A /* BBLaserBoardDelegate.swift */,
+			);
+			path = protocols;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -208,7 +225,10 @@
 				CC0C834F2A1A465700DB6534 /* GameData.swift in Sources */,
 				CC5D8DE32A1928AA0089A850 /* SceneDelegate.swift in Sources */,
 				CC0C834A2A1A40CF00DB6534 /* GameContentsTableViewCell.swift in Sources */,
+				CC7FC8622A2847F700D4F33A /* BBGameViewController.swift in Sources */,
+				CC7FC8662A28748F00D4F33A /* BBLaserBoardView.swift in Sources */,
 				CC8787212A24860700C79AD3 /* BBStartingViewController.swift in Sources */,
+				CC7FC8692A288EC700D4F33A /* BBLaserBoardDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
