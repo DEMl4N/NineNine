@@ -9,8 +9,8 @@ import UIKit
 
 class GameContentsTableViewCell: UITableViewCell {
 
-    @IBOutlet weak var gameImageView: UIImageView!
     @IBOutlet weak var gameTitleLabel: UILabel!
+    @IBOutlet weak var gameImageView: UIImageView!
     
     override func awakeFromNib() {
         super.awakeFromNib()
@@ -22,5 +22,4 @@ class GameContentsTableViewCell: UITableViewCell {
 
         // Configure the view for the selected state
     }
-
 }
