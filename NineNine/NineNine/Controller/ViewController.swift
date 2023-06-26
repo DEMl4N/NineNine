@@ -40,7 +40,6 @@ class ViewController: UIViewController, UITableViewDelegate, UITableViewDataSour
         gameContentsTableView
             .layer.cornerRadius = cornerRadius
         gameContentsTableView.layer.maskedCorners = [.layerMinXMaxYCorner, .layerMaxXMaxYCorner]
-        
     }
     
     /* ----- UITableViewDataSource 프로토콜 필수 구현 메소드 ------ */

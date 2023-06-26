@@ -10,6 +10,8 @@ import UIKit
 struct GameData {
     private let gameTitles: [String] = ["탭탭!", "쉐킷쉐킷!", "부비부비"]
     private var gameImages: [UIImage] = [#imageLiteral(resourceName: "tabtab"), #imageLiteral(resourceName: "Shake"), #imageLiteral(resourceName: "swipe")]
+    private var swipingCatImages:[UIImage] = [#imageLiteral(resourceName: "left"), #imageLiteral(resourceName: "right")]
+    private var fishImage: UIImage = #imageLiteral(resourceName: "fish_icon")
     
     func gameTitleArray() -> [String] {
         return gameTitles
@@ -18,11 +20,12 @@ struct GameData {
     func gameImageArray() -> [UIImage] {
         return gameImages
     }
-}
-
-struct LaserLine {
-    var points: [CGPoint]
-    let strokeColor: UIColor
-    let strokeWidth: CGFloat
-    var laserPointCount: Int
+    
+    func swipingCatImageArray() -> [UIImage] {
+        return swipingCatImages
+    }
+    
+    func fishThumbImage() -> UIImage {
+        return fishImage
+    }
 }
