@@ -16,14 +16,15 @@ class BBGameViewController: UIViewController {
 
     let gameData: GameData = GameData()
     var score: Int = 0
-
+    var gameTimer : GameTimer?
+    
     override func viewDidLoad() {
         super.viewDidLoad()
 
         scoreLabel.text = "\(score)"
         slider.setThumbImage(gameData.fishThumbImage(), for: .normal) // 슬라이더의 thumb가 터치되지 않았을 때
         slider.setThumbImage(gameData.fishThumbImage(), for: .highlighted) // thumb가 터치되었을 때
-        
+        gameTimer = GameTimer(pointLabel: scoreLabel, controller: self)
         setViewRoundShape(cornerRadius: 20)
     }
     
@@ -31,11 +32,12 @@ class BBGameViewController: UIViewController {
         let swipingCatImages = gameData.swipingCatImageArray()
         let image: UIImage = sender.value < 0.5 ? swipingCatImages[0] : swipingCatImages[1]
 
+        
         if (catImage.image != image) {
             catImage.image = image
-            score += 1
-            scoreLabel.text = "\(score)"
+            gameTimer?.startAction() // timer 시작 
         }
+        
     }
     
     func setViewRoundShape(cornerRadius: CGFloat) {

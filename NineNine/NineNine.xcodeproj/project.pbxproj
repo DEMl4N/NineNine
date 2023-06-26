@@ -21,6 +21,7 @@
 		CC7FC8622A2847F700D4F33A /* BBGameViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CC7FC8612A2847F700D4F33A /* BBGameViewController.swift */; };
 		CC8787212A24860700C79AD3 /* BBStartingViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CC8787202A24860700C79AD3 /* BBStartingViewController.swift */; };
 		CCF41ACE2A19FDA100355AEC /* LabelAttiributeUtils.swift in Sources */ = {isa = PBXBuildFile; fileRef = CCF41ACD2A19FDA100355AEC /* LabelAttiributeUtils.swift */; };
+		FF659BB32A498CFB001544EB /* GameTimer.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF659BB22A498CFB001544EB /* GameTimer.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -40,6 +41,7 @@
 		CC7FC8612A2847F700D4F33A /* BBGameViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BBGameViewController.swift; sourceTree = "<group>"; };
 		CC8787202A24860700C79AD3 /* BBStartingViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BBStartingViewController.swift; sourceTree = "<group>"; };
 		CCF41ACD2A19FDA100355AEC /* LabelAttiributeUtils.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LabelAttiributeUtils.swift; sourceTree = "<group>"; };
+		FF659BB22A498CFB001544EB /* GameTimer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GameTimer.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -107,6 +109,7 @@
 			isa = PBXGroup;
 			children = (
 				CC5D8DE42A1928AA0089A850 /* ViewController.swift */,
+				FF659BB22A498CFB001544EB /* GameTimer.swift */,
 				CC8787202A24860700C79AD3 /* BBStartingViewController.swift */,
 				CC7FC8612A2847F700D4F33A /* BBGameViewController.swift */,
 			);
@@ -206,6 +209,7 @@
 				CCF41ACE2A19FDA100355AEC /* LabelAttiributeUtils.swift in Sources */,
 				CC0C83512A1B293D00DB6534 /* ImageResize.swift in Sources */,
 				CC5D8DE52A1928AA0089A850 /* ViewController.swift in Sources */,
+				FF659BB32A498CFB001544EB /* GameTimer.swift in Sources */,
 				CC5D8DF92A1929C40089A850 /* HexColor.swift in Sources */,
 				CC5D8DE12A1928AA0089A850 /* AppDelegate.swift in Sources */,
 				CC0C834F2A1A465700DB6534 /* GameData.swift in Sources */,
