@@ -115,6 +115,7 @@
 				FF659BB22A498CFB001544EB /* GameTimer.swift */,
 				CC8787202A24860700C79AD3 /* BBStartingViewController.swift */,
 				CC7FC8612A2847F700D4F33A /* BBGameViewController.swift */,
+				AD9F1FD02A4895C2004CD45E /* ShakeItGameViewController.swift */,
 			);
 			path = Controller;
 			sourceTree = "<group>";
@@ -217,6 +218,7 @@
 				CC5D8DF92A1929C40089A850 /* HexColor.swift in Sources */,
 				CC5D8DE12A1928AA0089A850 /* AppDelegate.swift in Sources */,
 				CC0C834F2A1A465700DB6534 /* GameData.swift in Sources */,
+				AD9F1FD12A4895C2004CD45E /* ShakeItGameViewController.swift in Sources */,
 				CC5D8DE32A1928AA0089A850 /* SceneDelegate.swift in Sources */,
 				CC0C834A2A1A40CF00DB6534 /* GameContentsTableViewCell.swift in Sources */,
 				CC7FC8622A2847F700D4F33A /* BBGameViewController.swift in Sources */,
